@@ -1,0 +1,84 @@
+﻿@page "/"
+
+<SfRichTextEditor Height="500px" Placeholder="Type Something..." 
+                  ShowCharCount="true" >
+    <p>
+        The <a href="https://www.syncfusion.com/blazor-components/blazor-wysiwyg-rich-text-editor">Rich Text Editor</a>
+        component is a WYSIWYG (what you see is what you get) editor that provides the best user experience for creating
+        and updating content. Users can format their content using standard toolbar commands.
+    </p>
+    <p>
+        <b>Key features:</b>
+    </p>
+    <ul>
+        <li>
+            <p>Capable of handling markdown editing.</p>
+        </li>
+        <li>
+            <p>Contains a modular library to load the necessary functionality on demand.</p>
+        </li>
+        <li>
+            <p>Provides a fully customizable toolbar.</p>
+        </li>
+        <li>
+            <p>Supports third-party library integration.</p>
+        </li>
+        <li>
+            <p>Handles images, hyperlinks, uploads, etc.</p>
+        </li>
+        <li>
+            <p>Contains undo/redo manager.</p>
+        </li>
+        <li>
+            <p>Provides Hypertext Markup Language views to edit the source directly for developers.</p>
+        </li>
+        <li>
+            <p>Allows a preview of modified content before saving it.</p>
+        </li>
+        <li>
+            <p>Handles images, video, hyperlinks, uploads, etc.</p>
+        </li>
+        <li>
+            <p>Creates bulleted and numbered lists.</p>
+        </li>
+        <li>
+            <p>Provides support to show the toolbar in inline mode.</p>
+        </li>
+        <li>
+            <p>Allows changing the custom styles on the selected image using the quick toolbar.</p>
+        </li>
+    </ul>
+</SfRichTextEditor>
+
+<style>
+    .e-richtexteditor .e-rte-content .e-content,
+    .e-richtexteditor .e-rte-srctextarea {
+        font-family: 'Segoe UI';
+        font-size: 20px;
+        color: darkblue;
+    }
+
+    /* To change font color for toolbar icon and dropdown text*/
+    .e-richtexteditor .e-rte-toolbar .e-toolbar-item .e-icons,
+    .e-richtexteditor .e-rte-toolbar .e-toolbar-item .e-dropdown-btn .e-rte-dropdown-btn-text {
+        color: red;
+    }
+
+        /*To change font color for toolbar button in active state*/
+        .e-richtexteditor .e-rte-toolbar .e-toolbar-item .e-tbar-btn.e-icon-btn:hover,
+        .e-richtexteditor .e-rte-toolbar .e-toolbar-item .e-dropdown-btn .e-rte-dropdown-btn-text:hover,
+        .e-richtexteditor .e-rte-toolbar .e-toolbar-item.e-active .e-tbar-btn.e-icon-btn {
+            background: green;
+        }
+
+    .e-richtexteditor .e-rte-character-count {
+        color: violet;
+        font-family: segoe ui;
+        font-size: 18px;
+    }
+
+    .e-richtexteditor .e-rte-placeholder {
+        font-family: monospace;
+        color: blue;
+    }
+</style>
